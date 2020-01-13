@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+
+
+	<script type="text/javascript">
+
+	// Кнопка полноэкранный режим
+
+			function fullScreen(element) {
+				  if(element.requestFullscreen) {
+				    element.requestFullscreen();
+				  } else if(element.webkitrequestFullscreen) {
+				    element.webkitRequestFullscreen();
+				  } else if(element.mozRequestFullscreen) {
+				    element.mozRequestFullScreen();
+				  }
+				}
+
+			function polnoikrann()
+			{
+				var canvas = document.getElementById('continer');
+fullScreen(canvas);
+			}
+
+
+		
+			function Postroiki() 
+			{
+				 document.getElementById('continer').style.backgroundColor = "#006400";
+				 document.getElementById( 'menu').style.backgroundColor = "#006400";
+				 document.getElementById('K_postroikam').style.display = "none";
+				 document.getElementById('ozera').style.display = "none";	
+				 document.getElementById('Dom_R').style.display = "block";
+				 document.getElementById('buttomShop').style.display = "none";
+				 document.getElementById('buttomSklad').style.display = "none";
+				 document.getElementById('ShopPostroiri').style.display = "block";
+			}
+		
+
+			function domoi() {
+				document.getElementById('continer').style.backgroundColor = "#7CFC77";
+				document.getElementById( 'menu').style.backgroundColor = "#7CFC77";
+				document.getElementById('K_postroikam').style.display = "block";
+				document.getElementById('ozera').style.display = "block";	
+				document.getElementById('Dom_R').style.display = "none";
+				document.getElementById('Dom_L').style.display = "none";
+				document.getElementById('buttomShop').style.display = "block";
+				document.getElementById('buttomSklad').style.display = "block";
+				document.getElementById('ShopPostroiri').style.display = "none";
+
+
+			}
+
+			function K_ozeram(){
+				document.getElementById('continer').style.backgroundColor = "#006400";
+				document.getElementById( 'menu').style.backgroundColor = "#006400";
+				document.getElementById('K_postroikam').style.display = "none";
+				document.getElementById('ozera').style.display = "none";	
+				document.getElementById('Dom_L').style.display = "block";
+				document.getElementById('buttomShop').style.display = "none";
+				document.getElementById('buttomSklad').style.display = "none";
+			}
+
+			function openShop ()
+			{
+				if (document.getElementById('shop').style.display == 'block') 
+				{
+					document.getElementById('shop').style.display = "none";
+
+						document.getElementById('K_postroikam').style.display = "block";
+						document.getElementById('ozera').style.display = "block";	
+						document.getElementById('Dom_R').style.display = "none";
+						document.getElementById('Dom_L').style.display = "none";
+				}
+				else {
+					document.getElementById('shop').style.display = "block";
+
+						document.getElementById('K_postroikam').style.display = "none";
+						document.getElementById('ozera').style.display = "none";	
+						document.getElementById('Dom_R').style.display = "none";
+						document.getElementById('Dom_L').style.display = "none";
+				}
+
+
+
+			}
+
+
+			function openSklad ()
+			{
+				if (document.getElementById('sklad').style.display == 'block') 
+				{
+					document.getElementById('sklad').style.display = "none";
+
+						document.getElementById('K_postroikam').style.display = "block";
+						document.getElementById('ozera').style.display = "block";	
+						document.getElementById('Dom_R').style.display = "none";
+						document.getElementById('Dom_L').style.display = "none";
+				}
+				else {
+					document.getElementById('sklad').style.display = "block";
+
+						document.getElementById('K_postroikam').style.display = "none";
+						document.getElementById('ozera').style.display = "none";	
+						document.getElementById('Dom_R').style.display = "none";
+						document.getElementById('Dom_L').style.display = "none";
+				}
+			}
+
+
+
+			function openShopPostroiri(){
+				if (document.getElementById('sklad').style.display == 'block') 
+				{
+					document.getElementById('sklad').style.display = "none";
+
+						document.getElementById('K_postroikam').style.display = "block";
+						document.getElementById('ozera').style.display = "block";	
+						document.getElementById('Dom_R').style.display = "none";
+						document.getElementById('Dom_L').style.display = "none";
+				}
+				else {
+					document.getElementById('sklad').style.display = "block";
+
+						document.getElementById('K_postroikam').style.display = "none";
+						document.getElementById('ozera').style.display = "none";	
+						document.getElementById('Dom_R').style.display = "none";
+						document.getElementById('Dom_L').style.display = "none";
+				}
+			}
+
+	</script>
+</head>
+
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+		color: white;
+		
+	}
+	body{
+		background: black;
+	}
+
+	.continer{
+		width: 800px;
+		height: 500px;
+		background: #7CFC77;
+		margin: 50px auto;
+		position: relative;
+
+	}
+
+	.top{
+		
+		float: right;
+		display: flex;
+		
+		margin-top: 15px;
+
+	}
+	.TahCkrin{
+		width: 60px;
+		height: 30px;
+		background: green;
+		margin-right: 30px;
+		text-align: center;
+		border-radius: 10px;
+	}
+	.TahCkrin p{
+		padding-top: 5px;
+		
+	}
+	.prodykti{
+		width: 150px;
+		height: 30px;
+		background: green;
+		border-radius: 50px;
+		margin-right: 20px;
+	}
+	.prodykti p{
+		padding-top: 5px;
+		padding-left: 5px;
+	}
+	.materialu{
+		width: 150px;
+		height: 30px;
+		background: green;
+		border-radius: 50px;
+		margin-right: 20px;
+	}
+	.materialu p{
+		padding-top: 5px;
+		padding-left: 5px;
+	}
+	.rybini{
+		width: 150px;
+		height: 30px;
+		background: green;
+		border-radius: 50px;
+		margin-right: 20px;
+	}
+	.rybini p{
+		padding-top: 5px;
+		padding-left: 5px;
+	}
+	.opit{
+		
+		width: 150px;
+		height: 30px;
+		background: green;
+		border-radius: 50px;
+		margin-right: 20px;
+		
+	}
+	.opit p{
+		padding-top: 5px;
+		padding-left: 5px;
+	}
+	.lvl{
+		
+		border-radius: 100%;
+		width: 40px;
+		height: 40px;
+		background: green;
+		text-align: center;
+		margin-top: -5px;
+		margin-left: -40px;
+		margin-right: 20px;
+	}
+	.lvl p{
+		padding-top: 8px;
+		font-size: 20px;
+		
+	}
+	.postroiki{
+		position: absolute;
+		width: 110px;
+		height: 40px;
+		float: left;
+		margin:300px 0px 0px 30px;
+		background: #228B22;
+		border-radius: 50px;
+		text-align: center;
+		padding-top: 5px;
+	}
+
+	.ozera{
+		position: absolute;
+		width: 110px;
+		height: 40px;
+		margin: 300px 0px 0px 650px ;
+		float: right;
+		background: #228B22;
+		border-radius: 50px;
+		text-align: center;
+		padding-top: 5px;
+	}
+
+	#Dom_L,#Dom_R{
+		display: none;
+	}
+	.menu{
+		display: flex;
+		
+		margin-left: 190px;
+		
+		bottom: 5px;
+	}
+	.podMenu{
+		display: none;
+		width: 700px;
+		height: 130px;
+		background: #00FA9A;
+		
+		margin: 320px -550px 0px  -130px;
+		
+		
+		position: relative;
+		
+		
+    	overflow: hidden;
+    	overflow-x: scroll;
+    	white-space:nowrap;
+
+	
+	}
+	.podShop ,.podcklad{
+		display: inline-block;
+		width: 20%;
+		height: 75px;
+		
+		margin: 10px;
+		background: yellow;
+		text-align: center;
+		
+		
+	}
+
+
+
+
+	.buttonCololBlack{
+		color: black;
+		width: 100px;
+		margin-top: 80px;
+		background: yellow;
+		border-radius: 50px;
+	}
+	.podMenuButtomShop{
+		width: 110px;
+		height: 30px;
+		margin: 0px 0px 0px 350px;
+		bottom: 10px;
+		background: #228B22;
+		border-radius: 50px;
+		text-align: center;
+		padding-top: 5px;
+		position: absolute;
+	}
+	.podMenuButtomSklad{
+		width: 110px;
+		height: 30px;
+		margin: 0px 0px 0px 470px;
+		bottom: 10px;
+		background: #228B22;
+		border-radius: 50px;
+		text-align: center;
+		
+		position: absolute;
+	}
+
+
+.postroiki,.ozera, button , .podMenuButtomShop , .podMenuButtomSklad{
+	cursor: pointer;
+}
+	
+
+
+
+	.ShopPostroiri{
+		display: none;
+		width: 110px;
+		height: 30px;
+		margin: 0px 0px 0px 350px;
+		bottom: 10px;
+		background: #228B22;
+		border-radius: 50px;
+		text-align: center;
+		padding-top: 5px;
+		position: absolute;
+	}
+</style>
+<body >
+	<div class="continer" id="continer">
+		
+					
+		
+					<div class="top">
+			<!-- Рабочий	<button class="TahCkrin" onclick="polnoikrann()"><p>ЭКРАН</p></button> -->
+							<div class="prodykti"><p>Продукты : 0</p></div>
+							<div class="materialu"><p>Материалы : 0</p></div>
+							<div class="rybini"><p>Рубины : 0</p></div>
+							<div class="opit"><p>Опыт : 0</p></div>
+							<div class="lvl"><p>0</p></div>
+					</div>
+								<button class="postroiki" onclick="Postroiki()" id="K_postroikam">К постройкам</button>
+								<button class="ozera" id="ozera" onclick="K_ozeram()">К озерам</button>
+								<button class="ozera" id="Dom_R" onclick="domoi()">Домой</button>
+								<button class="postroiki" id="Dom_L" onclick="domoi()">Домой</button>
+		
+				<div class="menu" id="menu">
+					<button class="podMenuButtomShop" id="buttomShop" onclick="openShop()">Магазин</button>
+						<div class="podMenu" id="shop">
+							<div class="podShop" id="shop_1"><button class="buttonCololBlack">Купить</button></div>
+							<div class="podShop" id="shop_2"><button class="buttonCololBlack">Купить</button></div>
+							<div class="podShop" id="shop_3"><button class="buttonCololBlack">Купить</button></div>
+							<div class="podShop" id="shop_4"><button class="buttonCololBlack">Купить</button></div>
+							<div class="podShop" id="shop_5"><button class="buttonCololBlack">Купить</button></div>
+						</div>
+					<button class="podMenuButtomSklad" id="buttomSklad" onclick="openSklad()">Склад</button>
+						<div class="podMenu" id="sklad">
+							<div class="podcklad" id="cklad_1"><button class="buttonCololBlack">Продать</button></div>
+							<div class="podcklad" id="cklad_2"><button class="buttonCololBlack">Продать</button></div>
+							<div class="podcklad" id="cklad_3"><button class="buttonCololBlack">Продать</button></div>
+							<div class="podcklad" id="cklad_4"><button class="buttonCololBlack">Продать</button></div>
+							<div class="podcklad" id="cklad_5"><button class="buttonCololBlack">Продать</button></div>
+						</div>
+					<button class="ShopPostroiri" id="ShopPostroiri" onclick="openShopPostroiri()">Магазин</button>
+				</div>
+
+	</div>
+</body>
+</html>
